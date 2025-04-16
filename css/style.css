@@ -1,7 +1,7 @@
 /* GLOBAL */
 * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "dm-sans", sans-serif;
 }
 
 body {
@@ -49,13 +49,6 @@ body {
     margin-bottom: 4em;
 }
 
-.subhero {
-    max-width: 800px;
-    display: block;
-    margin: 7em auto;
-    text-align: center;
-}
-
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -80,7 +73,7 @@ body {
 
 .column img {
     width: 100%;
-    box-shadow: 0 0 3px 0 rgba(47, 47, 47, 0.07);
+    box-shadow: 0 0 1px 0 rgba(47, 47, 47, 0.488);
     margin-bottom: 1%;
 }
 
@@ -92,6 +85,7 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color:rgb(255, 255, 255);
+    margin-bottom: 1%;
 }
 
 .overlay {
@@ -111,4 +105,70 @@ body {
     height: 100%;
 }
 
+/* SUBPAGE LAYOUT */
+.subhero {
+    /* max-width: 800px; */
+    display: block;
+    margin: 7em auto;
+    text-align: center;
+}
 
+.subhero ul {
+    list-style: none;
+    padding: 0;
+}
+
+.subhero {
+    display: block;
+    text-align: left;
+}
+
+.subhero .subrow {
+    align-items: top;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subhero h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 0.3em;
+}
+
+.subrow p {
+    line-height: 1.5em;
+}
+
+.subrow strong {
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.h2.margin {
+    margin: 5em 0 1.5em 0;
+}
+
+.row.bottom {
+    margin-bottom: 7em;
+}
+
+.two-thirds.column {
+    width: 63%;
+}
+
+.one-fourth.column {
+    width: 24%;
+}
+
+/* SCROLL TO TOP */
+.site-footer {
+    text-align: center;
+    margin: 4em 0 6em 0;
+}
+
+.site-footer a {
+    color: rgb(86, 86, 86);
+    text-decoration: none;
+}

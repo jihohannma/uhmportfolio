@@ -8,13 +8,18 @@
     <!-- MAIN CSS STYLES -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- ADOBE FONTS -->
+    <link rel="stylesheet" href="https://use.typekit.net/dcu6vsn.css">
+
 </head>
 <body>
     <header class="site-header">
         <div class="container">
+            <section class="top">
             <div class="logo">
                 <h1><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
             </div>
+            </section>
             <nav class="site-nav">
                 <ul>
                     <li><a href="index.html">WORK</a></li>
@@ -30,18 +35,38 @@
             <div class="row">
                 <div class="column left">
                     <a href="banknote.html">
-                        <img src="img/Portfolio IMG.jpg" alt="Banknote">
+                        <img src="img/Banknote.jpg" alt="Banknote">
                         <div class="overlay">
                             <div class="content"><h2>Banknote</h2><p>2023</p></div>
                         </div>
                     </a>
                 </div>
                 <div class="column right">
-                    <a href="#"><img src="img/Portfolio IMG4.jpg" alt="BReun"></a></div>
+                    <a href="koinobori.html">
+                        <img src="img/Portfolio IMG2.jpg" alt="Koinobori">
+                        <div class="overlay">
+                            <div class="content"><h2>Koinobori</h2><p>2024</p></div>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="row">
-                <div class="column left"><a href="#"><img src="img/Portfolio IMG3.jpg" alt="Bapsoon"></a></div>
-                <div class="column right"><a href="#"><img src="img/Portfolio IMG2.jpg" alt="Koinobori"></a></div>
+                <div class="column left">
+                    <a href="banknote.html">
+                        <img src="img/Portfolio IMG3.jpg" alt="Bapsoon">
+                        <div class="overlay">
+                            <div class="content"><h2>Bapsoon</h2><p>2023</p></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="column right">
+                    <a href="koinobori.html">
+                        <img src="img/Portfolio IMG4.jpg" alt="Koinobori">
+                        <div class="overlay">
+                            <div class="content"><h2>B.REUN</h2><p>2024</p></div>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="row">
                 <div class="column left"><a href="#"><img src="img/Portfolio IMG5.jpg" alt="Moichi"></a></div>
@@ -63,8 +88,15 @@
     </main>
 
     <footer class="site-footer">
-        
+        <a href="#top">BACK TO TOP</a>
     </footer>
+
+    <!-- SMOOTH SCROLL BY CHRIS FERDINANDI https://github.com/cferdinandi/smooth-scroll -->
+    <script src="smoothscroll.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+
 
 </body>
 </html>
