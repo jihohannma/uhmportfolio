@@ -109,7 +109,6 @@ body {
     /* max-width: 800px; */
     display: block;
     margin: 7em auto;
-    text-align: center;
 }
 
 .subhero ul {
@@ -190,10 +189,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .site-main {
-        margin: 0;
-    }
-    
     .row {
         flex-wrap: wrap;
     }
@@ -219,5 +214,24 @@ body {
 
     .site-header .site-nav ul li {
         margin-left: 0;
+    }
+
+    .subhero {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 4em 1.5em 3em 1.5em;
+    }
+
+    .subhero .subrow {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .two-thirds.column {
+        width: 100%;
+    }
+
+    .one-fourth.column {
+        width: 100%;
     }
 }
