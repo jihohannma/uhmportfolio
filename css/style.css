@@ -64,16 +64,18 @@ body {
 
 .column.left {
     margin-right: 0.5%;
+    margin-bottom: 0.5%;
 }
 
 .column.right {
     margin-left: 0.5%;
+    margin-bottom: 0.5%;
 }
 
 .column img {
     width: 100%;
     box-shadow: 0 0 1px 0 rgba(47, 47, 47, 0.488);
-    margin-bottom: 1%;
+    margin: 0;
 }
 
 /* THUMBNAIL HOVER */
@@ -84,7 +86,7 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color:rgb(255, 255, 255);
-    margin-bottom: 1%;
+    /* margin-bottom: 1%; */
 }
 
 .overlay {
@@ -176,21 +178,29 @@ body {
 body {
     font-size: 87.5%;
 }
-  
+
 @media (min-width: 768px) {
     body {
-      font-size: 100%;
+        font-size: 100%;
     }
 }
 @media (min-width: 1250px) {
     body {
-      font-size: 112.5%;
+        font-size: 112.5%;
     }
 }
 
 @media (max-width: 768px) {
     .row {
         flex-wrap: wrap;
+    }
+
+    .column.left {
+        margin-right: 0;
+    }
+
+    .column.right {
+        margin-left: 0;
     }
 
     .site-header {
