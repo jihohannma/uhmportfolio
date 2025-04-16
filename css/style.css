@@ -8,6 +8,18 @@ body {
     margin: 0;
 }
 
+h1 {
+    font-family: "bc-novatica-cyr", sans-serif;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: "bc-novatica-cyr", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
 /* SITE-HEADER */
 .site-header {
     display: block;
