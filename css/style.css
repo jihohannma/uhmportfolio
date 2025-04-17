@@ -6,6 +6,7 @@
 
 body {
     margin: 0;
+    background-color:rgb(248, 250, 253)
 }
 
 h1 {
@@ -36,6 +37,7 @@ h2 {
 
 .site-header .logo img{
     width: 50%;
+    mix-blend-mode: multiply;
 }
 
 .site-header .site-nav ul{
@@ -122,7 +124,7 @@ h2 {
 
 .column img {
     width: 100%;
-    box-shadow: 0 0 1px 0 rgba(47, 47, 47, 0.488);
+    box-shadow: 0 0 1px 0 rgba(47, 47, 47, 0.16);
     margin: 0;
 }
 
