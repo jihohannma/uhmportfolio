@@ -55,7 +55,7 @@ h2 {
 }
 
 .site-header .site-nav ul li a:hover {
-    color: rgb(32, 125, 255);
+    color: #1585FF;
 }
 
 /* HERO */
@@ -183,7 +183,7 @@ h2 {
 .subhero h1 {
     font-size: 1.5em;
     text-transform: uppercase;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.05em;
     margin-bottom: 0.3em;
     color:rgb(27, 27, 27);
 }
@@ -197,6 +197,8 @@ h2 {
 .subrow strong {
     text-transform: uppercase;
     letter-spacing: 0.03em;
+    font-weight: 600;
+    color: #4a4a4a;
 }
 
 .h2.margin {
