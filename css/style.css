@@ -20,6 +20,7 @@ h2 {
     letter-spacing: 0.1em;
 }
 
+
 /* SITE-HEADER */
 .site-header {
     display: block;
@@ -53,6 +54,27 @@ h2 {
 
 .site-header .site-nav ul li a:hover {
     color: rgb(32, 125, 255);
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    margin-bottom: 4em;
+    justify-content: space-between;
+}
+
+.hero h2 {
+    letter-spacing: 0.05em;
+    color:rgb(27, 27, 27);
+    font-size: 2em;
+    margin: 0;
+}
+
+.hero p {
+    font-weight: 300;
+    color:rgb(27, 27, 27);
+    width: 48%;
+    margin: 0;
 }
 
 /* LAYOUT */
@@ -157,14 +179,17 @@ h2 {
 }
 
 .subhero h1 {
-    font-size: 2.5em;
+    font-size: 1.5em;
     text-transform: uppercase;
     letter-spacing: 0.03em;
     margin-bottom: 0.3em;
+    color:rgb(27, 27, 27);
 }
 
 .subrow p {
     line-height: 1.5em;
+    color:rgb(64, 64, 64);
+    /* font-weight: 300; */
 }
 
 .subrow strong {
