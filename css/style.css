@@ -17,6 +17,7 @@ h1 {
 h2 {
     font-family: "bc-novatica-cyr", sans-serif;
     font-weight: 500;
+    font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 0.07em;
 }
@@ -25,8 +26,11 @@ h2 {
 /* SITE-HEADER */
 .site-header {
     display: block;
-    margin-top: 3em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     margin-bottom: 4em;
+    background-color: white;
 }
 
 .site-header .container {
@@ -36,7 +40,7 @@ h2 {
 }
 
 .site-header .logo img{
-    width: 50%;
+    width: 36%;
     mix-blend-mode: multiply;
 }
 
@@ -56,6 +60,11 @@ h2 {
 
 .site-header .site-nav ul li a:hover {
     color: #1585FF;
+}
+
+hr {
+    border-top: 0.5px solid #f2f2f2;
+    margin: 0;
 }
 
 /* HERO */
@@ -246,6 +255,18 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        background-color: white;
+    }
+    
+    hr {
+        display: none;
+    }
+
+    .site-header {
+        position: relative;
+    }
+
     .row {
         flex-wrap: wrap;
     }
@@ -259,7 +280,7 @@ body {
     }
 
     .site-header {
-        margin: 3em 2em 2em 2em;
+        padding: 3em 2em 2em 2em;
     }
 
     .site-header .container {
@@ -272,13 +293,14 @@ body {
     }
 
     .site-nav ul {
-        justify-content: space-between;
+        justify-content: center;
         padding: 0;
         margin-top: 3em;
     }
 
     .site-header .site-nav ul li {
         margin-left: 0;
+        padding: 0 2em;
     }
 
     .subhero {
@@ -298,5 +320,9 @@ body {
 
     .one-fourth.column {
         width: 100%;
+    }
+
+    .h2.margin {
+        margin-left: 1.5em;
     }
 }
