@@ -311,6 +311,18 @@ body {
         flex-wrap: wrap;
     }
 
+    .row.bottom {
+        flex-wrap: nowrap;
+    }
+
+    .row.bottom .column.left {
+        margin-right: 1%;
+    }
+
+    .row.bottom .column.right {
+        margin-left: 1%;
+    }
+
     .two-thirds.column {
         width: 100%;
     }
