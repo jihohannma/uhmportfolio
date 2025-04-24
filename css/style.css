@@ -124,11 +124,13 @@ hr {
 .column.left {
     margin-right: 0.5%;
     margin-bottom: 0.5%;
+    flex: 1;
 }
 
 .column.right {
     margin-left: 0.5%;
     margin-bottom: 0.5%;
+    flex: 1;
 }
 
 .column img {
@@ -252,6 +254,19 @@ hr {
     height: 90%;
 }
 
+.media {
+    width: 100%;
+    height: auto;
+}
+
+.media video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 0 1px 0 rgba(47, 47, 47, 0.16);
+}
+
 /* RESPONSIVE */
 body {
     font-size: 87.5%;
@@ -283,15 +298,17 @@ body {
     }
 
     .row {
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .column.left {
         margin-right: 0;
+        width: 100%;
     }
 
     .column.right {
         margin-left: 0;
+        width: 100%;
     }
 
     .site-header .container {
