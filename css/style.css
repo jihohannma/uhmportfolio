@@ -238,6 +238,20 @@ hr {
     text-decoration: none;
 }
 
+/* VIDEO */
+.video-wrapper {
+    height: 600px;
+    background-color: #1f1f1f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    height: 90%;
+}
+
 /* RESPONSIVE */
 body {
     font-size: 87.5%;
