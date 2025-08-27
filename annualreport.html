@@ -15,12 +15,19 @@
 <body>
     <header class="site-header">
         <div class="container">
+            <section class="top">
             <div class="logo">
                 <h1><a href="index.html"><img src="img/logov2.png" alt="logo"></a></h1>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <nav class="site-nav">
+            </section>
+            <nav class="site-nav fullscreen">
                 <ul>
-                    <li><a href="index.html">WORK</a></li>
+                    <li><a href="index.html">WORKS</a></li>
                     <!-- <li><a href="about.html">ABOUT</a></li> -->
                     <li><a href="img/resume2025.pdf">RESUME</a></li>
                 </ul>
@@ -95,6 +102,19 @@
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>
+
+    <!-- MOBILE HAMBURGER TOGGLE -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const toggle = document.querySelector(".menu-toggle");
+          const nav = document.querySelector(".site-nav.fullscreen");
+        
+          toggle.addEventListener("click", function() {
+            toggle.classList.toggle("active"); // 햄버거 → X
+            nav.classList.toggle("active");    // 메뉴 보이기
+          });
+        });
+        </script>
     
 </body>
 </html>
